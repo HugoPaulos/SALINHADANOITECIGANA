@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	background-image: url(https://i.imgur.com/CO1JysE.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	overflow: hidden;
+}
+
+.but {
+    z-index: 1000;
+    position: absolute;
+    background-color: #transparent;
+    padding: 20px 8px 8px 8px;
+    border-radius: 6px;
+    border: 1px solid #707070;
+    top: 6%;
+    color: #ffffff;
+    text-decoration: none;
+    right: 1%;
+}
+	
+.but:hover {
+    background-color: #000000;
+}
+
+.but1 {
+    z-index: 1000;
+    position: absolute;
+    background-color: #transparent;
+    padding: 50px 8px 50px 8px;
+    border-radius: 6px;
+    border: 1px solid #707070;
+    top: 81%;
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.3;
+}
+
+.info {
+    z-index: 1000;
+    position: absolute;
+    top: 8%;
+	color: #fff;
+}
+  
+.but:hover {
+	opacity: 0.5;
+}
+
+.but1:hover {
+	opacity: 0.3;
+}
+</style>
+</head>
+
+<body>
+<a class="but" href="#" onclick="Bgs()">Mudar o fundo</a>
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script>
+    var count = 0;
+    var n = 10;
+
+    function Bgs() {
+        if (count === 0) {
+            $('body').css({'background-image': 'url(https://i.imgur.com/r75Z9Rt.jpg)', 'background-repeat': 'no-repeat', 'background-size': '100%'});
+        } else if (count === 1) {
+            $('body').css({'background-image': 'url(https://i.imgur.com/pDA7jJv.jpg)', 'background-repeat': 'no-repeat', 'background-size': '100%'});
+        } else if (count === 2) {
+            $('body').css({'background-image': 'url(https://i.imgur.com/O4Oi2kB.jpg)', 'background-repeat': 'no-repeat', 'background-size': '100%'});
+        } else if (count === 3) {
+            $('body').css({'background-image': 'url(https://i.imgur.com/rm4GkmP.jpg)', 'background-repeat': 'no-repeat', 'background-size': '100%'});
+        } else if (count === 4) {
+            $('body').css({'background-image': 'url(https://i.imgur.com/KNRTNoi.jpg)', 'background-repeat': 'no-repeat', 'background-size': '100%'});
+        } else if (count === 5) {
+            $('body').css({'background-image': 'url(https://i.imgur.com/oBpzeYA.jpg)', 'background-repeat': 'no-repeat', 'background-size': '100%'});
+        } else if (count === 6) {
+            $('body').css({'background-image': 'url(https://i.imgur.com/75kSaDp.jpg)', 'background-repeat': 'no-repeat', 'background-size': '100%'});
+        } else if (count === 7) {
+            $('body').css({'background-image': 'url(https://i.imgur.com/CrjpEbF.jpg)', 'background-repeat': 'no-repeat', 'background-size': '100%'});
+        } else if (count === 8) {
+            $('body').css({'background-image': 'url(https://i.imgur.com/YQrmPax.jpg)', 'background-repeat': 'no-repeat', 'background-size': '100%'});
+        } else if (count === 9) {
+            $('body').css({'background-image': 'url(https://i.imgur.com/cs2iVEt.jpg)', 'background-repeat': 'no-repeat', 'background-size': '100%'});
+        }
+
+        count += 1;
+        if (count === n)
+            count = 0;
+    }
+</script>
